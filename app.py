@@ -4,7 +4,14 @@ st.title("Ejemplo para usar Session State")
 
 if 'count' not in st.session_state:
   st.session_state['count'] = 0
-  
+
+st.write(st.session_state)
+# Con el código de arriba se va a agregar el count a la libreria de session state y tendrá el valor indicado
+
+if st.button('Click me'):
+  st.session_state['count'] += 1
+
+# Con este código solo se pone el botón pero no incrementa el número
 # count = 0
 
 # increment = st.button("Increment")
@@ -13,4 +20,4 @@ if 'count' not in st.session_state:
 
 # st.write("Count =", count)
 
-st.write(st.session_state)
+
