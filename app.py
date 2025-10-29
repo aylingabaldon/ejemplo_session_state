@@ -9,7 +9,7 @@ st.write(st.session_state)
 # Con el código de arriba se va a agregar el count a la libreria de session state y tendrá el valor indicado
 
 if 'name' not in st.session_state:
-  st.session_state['name'] = ' '
+  st.session_state['name'] = ''
   
 if st.button('Click me'):
   st.session_state['count'] += 1
