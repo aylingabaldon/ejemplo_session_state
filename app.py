@@ -11,9 +11,11 @@ st.write(st.session_state)
 if st.button('Click me'):
   st.session_state['count'] += 1
 
-nombre = st.text_input("Escribe tu nombre")
+  
+name = st.text_input("Escribe tu nombre")
 st.write(nombre) 
-
+if name not in st.session_state:
+  st.session_state['name'] = ' '
 # Con este código solo se pone el botón pero no incrementa el número
 # count = 0
 
